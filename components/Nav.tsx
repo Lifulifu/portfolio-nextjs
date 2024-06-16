@@ -50,7 +50,7 @@ const Nav = () => {
           <SheetContent>
             <SheetHeader></SheetHeader>
 
-            <nav className="h-full flex flex-col gap-4 items-center justify-center">
+            <nav className="h-full flex flex-col gap-8 items-center justify-center">
               {links.map((link) => (
                 <Link
                   key={link.name}
