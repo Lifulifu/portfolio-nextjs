@@ -27,7 +27,7 @@ jobs:
           version: 8
           run_install: |
             - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+              args: [--no-frozen-lockfile, --strict-peer-dependencies]
             - args: [--global, gulp, prettier, typescript]
 
       - name: Setup Pages ⚙️
