@@ -12,7 +12,10 @@ export default function Home() {
       {/* top bar */}
       <div className="fixed inset-x-0 z-40 bg-gradient-to-b from-slate-900 from-50% to-transparent">
         <div className="container flex items-center justify-between py-8">
-          <Link href={"#top"} className="text-3xl font-mono font-bold">
+          <Link
+            href={"#top"}
+            className="text-3xl font-mono font-bold after:content-[''] after:block after:w-4 after:h-1 after:mx-auto after:bg-teal-400 after:translate-y-1"
+          >
             Lifu
           </Link>
           <Nav />

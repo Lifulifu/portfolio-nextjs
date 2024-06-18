@@ -23,7 +23,7 @@ const ProjectCard = ({
     <motion.div
       layoutId={id}
       onClick={onClick}
-      className="bg-slate-800 rounded-md overflow-hidden cursor-pointer w-[45ch]"
+      className="bg-slate-800 rounded-md overflow-hidden cursor-pointer w-[45ch] hover:drop-shadow-glow transition-[filter_transform] duration-500 hover:scale-105"
     >
       {/* thumbnail */}
       <motion.div

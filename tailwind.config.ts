@@ -15,6 +15,12 @@ const config = {
       padding: "2rem",
     },
     extend: {
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(45, 212, 191, 0.25)",
+          "0 0px 65px rgba(200, 200, 200, 0.15)"
+        ]
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
