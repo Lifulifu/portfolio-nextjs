@@ -1,5 +1,3 @@
-const BASE_PATH = process.env.BASE_PATH || "";
-
 export const projects: {
   title: string;
   tags: string[];
@@ -16,10 +14,10 @@ export const projects: {
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
       images: [
-        BASE_PATH + "/aivtb/Frame 1.png",
-        BASE_PATH + "/aivtb/Frame 2.png",
-        BASE_PATH + "/aivtb/Frame 3.png",
-        BASE_PATH + "/aivtb/Frame 4.png",
+        "/aivtb/Frame 1.png",
+        "/aivtb/Frame 2.png",
+        "/aivtb/Frame 3.png",
+        "/aivtb/Frame 4.png",
       ],
       url: "/",
     },
@@ -29,7 +27,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: [BASE_PATH + "aigo/Frame 6.png", BASE_PATH + "aigo/Frame 5.png"],
+      images: ["/aigo/Frame 6.png", "/aigo/Frame 5.png"],
       url: "/",
     },
     {
@@ -38,7 +36,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: [BASE_PATH + "dc/dc.jpg"],
+      images: ["/dc/dc.jpg"],
       url: "/",
     },
     {
@@ -47,7 +45,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: [BASE_PATH + "mj/Frame 4.png"],
+      images: ["/mj/Frame 4.png"],
       url: "/",
     },
     {

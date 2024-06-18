@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
+import Image from "next/image";
 
 const ProjectCard = ({
   id,
@@ -26,16 +27,13 @@ const ProjectCard = ({
       className="bg-slate-800 rounded-md overflow-hidden cursor-pointer w-[45ch] hover:drop-shadow-glow transition-[filter_transform] duration-500 hover:scale-105"
     >
       {/* thumbnail */}
-      <motion.div
-        className="aspect-[16/9] bg-cover bg-center"
-        style={{ backgroundImage: `url('/${image}')` }}
-      />
+      <div className="relative aspect-[16/9]">
+        {image && <Image src={image} alt={title} fill />}
+      </div>
 
       {/* content */}
       <div className="p-4">
-        <motion.h2 layoutId={`${id}-title`} className="text-3xl font-bold">
-          {title}
-        </motion.h2>
+        <h2 className="text-3xl font-bold">{title}</h2>
 
         {/* tags */}
         <div className="flex flex-wrap gap-1 mt-2">

@@ -13,6 +13,7 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { RiExternalLinkLine } from "react-icons/ri";
+import Image from "next/image";
 
 const ProjectModal = ({
   id,
@@ -59,9 +60,10 @@ const ProjectModal = ({
               {images.map((image) => (
                 <CarouselItem
                   key={image}
-                  style={{ backgroundImage: `url('/${image}')` }}
-                  className="aspect-[16/9] bg-cover bg-center"
-                />
+                  className="relative w-full aspect-[16/9]"
+                >
+                  <Image src={image} fill alt="" />
+                </CarouselItem>
               ))}
             </CarouselContent>
             <CarouselPrevious className="absolute left-4 bg-slate-900 text-white border-white" />
@@ -70,16 +72,12 @@ const ProjectModal = ({
 
           {/* content */}
           <div className="p-8 overflow-auto max-h-[60vh]">
-            <motion.h2 className="text-3xl font-bold" layoutId={`${id}-title`}>
-              {title}
-            </motion.h2>
+            <h2 className="text-3xl font-bold">{title}</h2>
 
             {/* tags */}
             <div className="flex gap-1 mt-2 flex-wrap">
               {tags.map((tag) => (
-                <Badge key={tag} variant="secondary">
-                  {tag}
-                </Badge>
+                <Badge key={tag}>{tag}</Badge>
               ))}
             </div>
 
