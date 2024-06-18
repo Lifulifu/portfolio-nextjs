@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: process.env.BASE_PATH || "",
+  basePath: "/portfolio-nextjs",
   output: "export",
   reactStrictMode: true,
 };

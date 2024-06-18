@@ -29,7 +29,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: ["aigo/Frame 6.png", "aigo/Frame 5.png"],
+      images: [BASE_PATH + "aigo/Frame 6.png", BASE_PATH + "aigo/Frame 5.png"],
       url: "/",
     },
     {
@@ -38,7 +38,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: ["dc/dc.jpg"],
+      images: [BASE_PATH + "dc/dc.jpg"],
       url: "/",
     },
     {
@@ -47,7 +47,7 @@ export const projects: {
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
-      images: ["mj/Frame 4.png"],
+      images: [BASE_PATH + "mj/Frame 4.png"],
       url: "/",
     },
     {
