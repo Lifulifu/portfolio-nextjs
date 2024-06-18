@@ -1,3 +1,5 @@
+const BASE_PATH = process.env.BASE_PATH || "";
+
 export const projects: {
   title: string;
   tags: string[];
@@ -14,10 +16,10 @@ export const projects: {
       longDesc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
       images: [
-        "aivtb/Frame 1.png",
-        "aivtb/Frame 2.png",
-        "aivtb/Frame 3.png",
-        "aivtb/Frame 4.png",
+        BASE_PATH + "/aivtb/Frame 1.png",
+        BASE_PATH + "/aivtb/Frame 2.png",
+        BASE_PATH + "/aivtb/Frame 3.png",
+        BASE_PATH + "/aivtb/Frame 4.png",
       ],
       url: "/",
     },
