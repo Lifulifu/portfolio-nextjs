@@ -52,6 +52,12 @@ jobs:
     needs: build
 
     steps:
+      - name: Download artifact 🔽
+        uses: actions/download-pages-artifact@v3
+
+      - name: List downloaded files 📂
+        run: ls -R .
+
       - name: Publish to GitHub Pages 🚀
         id: deployment
         uses: actions/deploy-pages@v4
