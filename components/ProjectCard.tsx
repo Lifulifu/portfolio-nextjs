@@ -28,7 +28,7 @@ const ProjectCard = ({
     >
       {/* thumbnail */}
       <div className="relative aspect-[16/9]">
-        {image && <img src={config?.basePath ?? "" + image} alt={title} />}
+        {image && <img src={(config?.basePath ?? "") + image} alt={title} />}
       </div>
 
       {/* content */}

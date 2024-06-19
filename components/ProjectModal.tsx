@@ -62,7 +62,7 @@ const ProjectModal = ({
                   key={image}
                   className="relative w-full aspect-[16/9]"
                 >
-                  <img src={config?.basePath ?? "" + image} alt={title} />
+                  <img src={(config?.basePath ?? "") + image} alt={title} />
                 </CarouselItem>
               ))}
             </CarouselContent>
