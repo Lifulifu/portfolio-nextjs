@@ -13,6 +13,7 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { RiExternalLinkLine } from "react-icons/ri";
+import config from "@/next.config.mjs";
 
 const ProjectModal = ({
   id,
@@ -61,7 +62,7 @@ const ProjectModal = ({
                   key={image}
                   className="relative w-full aspect-[16/9]"
                 >
-                  <img src={image} alt={title} />
+                  <img src={config?.basePath ?? "" + image} alt={title} />
                 </CarouselItem>
               ))}
             </CarouselContent>

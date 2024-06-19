@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
+import config from "@/next.config.mjs";
 
 const ProjectCard = ({
   id,
@@ -27,7 +28,7 @@ const ProjectCard = ({
     >
       {/* thumbnail */}
       <div className="relative aspect-[16/9]">
-        {image && <img src={image} alt={title} />}
+        {image && <img src={config?.basePath ?? "" + image} alt={title} />}
       </div>
 
       {/* content */}
