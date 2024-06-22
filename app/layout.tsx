@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lifu's Portfolio",
     description: "A showcase of Lifu's ambitious open-source side projects.",
-    images: ["/thumb.png"],
+    images: ["https://lifulifu.github.io/portfolio-nextjs/thumb.png"],
   },
 };
 
