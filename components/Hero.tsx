@@ -8,7 +8,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <WavyBackground
-      className="container flex flex-col items-center gap-8"
+      className="container flex flex-col items-center gap-8 pt-20"
       backgroundFill="#0f172a"
       blur={2}
       waveWidth={5}

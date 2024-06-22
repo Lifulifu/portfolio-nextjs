@@ -7,19 +7,25 @@ export const projects: {
   url: string;
 }[] = [
     {
-      title: "AI Vtuber",
+      title: "AI Virtual YouTuber",
       tags: ["Openai", "MMVC", "Web", "Canva", "Stable Diffusion"],
-      shortDesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit sadf fk alkdjfldsa asdfa jaf d.",
-      longDesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
+      shortDesc: "A virtual YouTube streamer that chats and interacts with viewers in real-time, achieving more than 500 subscribers to date.",
+      longDesc: `This project is an AI-powered virtual YouTuber designed to emulate live streamers using LLM and virtual avatars. Our AI virtual YouTuber can engage in real-time interactions with viewers, featuring a unique appearance, voice, and personality.
+
+- Real-Time Interaction: Implemented a pipeline system to optimize for latency.
+
+- Unique Persona: Distinctive look, voice, and personality, achieved by fine-tuning LLM and voice models.
+
+- Backend System: Highly customizable in-browser backend system, supports both fully automated operations and manual moderation.
+
+- Continuous Learning: Continuously improves the LLM model from the data collected during live streams.`,
       images: [
         "/aivtb/Frame 1.png",
         "/aivtb/Frame 2.png",
         "/aivtb/Frame 3.png",
         "/aivtb/Frame 4.png",
       ],
-      url: "/",
+      url: "https://github.com/Lifulifu/aivtb",
     },
     {
       title: "AIGO Competition Official Site",
@@ -53,7 +59,7 @@ export const projects: {
       tags: ["Web", "Svelte"],
       shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       longDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      images: [],
+      images: ['/prompthub/Frame 7.png', '/prompthub/Frame 8.png'],
       url: "/",
     },
   ];
