@@ -40,7 +40,7 @@ const ProjectModal = ({
       {/* modal */}
       <motion.div
         layoutId={id}
-        className="relative max-w-[70ch] max-h-full bg-slate-900 rounded-lg overflow-auto"
+        className="relative max-w-[70ch] max-h-full bg-slate-800 rounded-lg overflow-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* gallery */}
@@ -61,7 +61,11 @@ const ProjectModal = ({
                 key={image}
                 className="relative w-full aspect-[16/9]"
               >
-                <img src={(config?.basePath ?? "") + image} alt={title} />
+                <img
+                  className="w-full"
+                  src={(config?.basePath ?? "") + image}
+                  alt={title}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -80,7 +84,9 @@ const ProjectModal = ({
             ))}
           </div>
 
-          <p className="text-slate-400 mt-2">{description}</p>
+          <p className="text-slate-400 mt-2 whitespace-pre-wrap">
+            {description}
+          </p>
 
           {url && (
             <div className="mt-8">
