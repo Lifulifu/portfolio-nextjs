@@ -5,9 +5,7 @@ import { GoDownload } from "react-icons/go";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -34,10 +32,12 @@ const Nav = () => {
           </Link>
         ))}
 
-        <Button className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2">
-          <GoDownload />
-          Resume
-        </Button>
+        <Link href="/resume.pdf">
+          <Button className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2">
+            <GoDownload />
+            Resume
+          </Button>
+        </Link>
       </nav>
 
       {/* mobile nav */}
@@ -60,10 +60,12 @@ const Nav = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2">
-                <GoDownload />
-                Resume
-              </Button>
+              <Link href="/resume.pdf">
+                <Button className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2">
+                  <GoDownload />
+                  Resume
+                </Button>
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>

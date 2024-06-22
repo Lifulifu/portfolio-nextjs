@@ -41,13 +41,15 @@ function Hero() {
         </Link>
       </div>
 
-      <Button
-        size="lg"
-        className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2"
-      >
-        <GoDownload />
-        Resume
-      </Button>
+      <Link href="/resume.pdf">
+        <Button
+          size="lg"
+          className="text-xl font-mono bg-teal-500 hover:bg-teal-600 gap-2"
+        >
+          <GoDownload />
+          Resume
+        </Button>
+      </Link>
     </WavyBackground>
   );
 }
