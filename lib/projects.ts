@@ -4,13 +4,13 @@ export const projects: {
   shortDesc: string;
   longDesc: string;
   images: string[];
-  url: string;
+  url?: string;
 }[] = [
     {
       title: "AI Virtual YouTuber",
       tags: ["Openai", "MMVC", "Web", "Canva", "Stable Diffusion"],
-      shortDesc: "A virtual YouTube streamer that chats and interacts with viewers in real-time, achieving more than 500 subscribers to date.",
-      longDesc: `This project is an AI-powered virtual YouTuber designed to emulate live streamers using LLM and virtual avatars. Our AI virtual YouTuber can engage in real-time interactions with viewers, featuring a unique appearance, voice, and personality.
+      shortDesc: "A virtual YouTube streamer that chats and interacts with viewers in real-time.",
+      longDesc: `This project is an AI-powered virtual YouTuber designed to emulate live streamers using LLM and virtual avatars. Our AI virtual YouTuber can engage in real-time interactions with viewers, featuring a unique appearance, voice, and personality, attracting more than 500 subscribers to date.
 
 - Real-Time Interaction: Implemented a pipeline system to optimize for latency.
 
@@ -30,36 +30,37 @@ export const projects: {
     {
       title: "AIGO Competition Official Site",
       tags: ["Web", "Svelte"],
-      shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      longDesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
+      shortDesc: "Official promotion page for an AI Competition.",
+      longDesc: `The Official promotion page for the AIGO Competition, which aims to predict housing prices in Taiwan using AI/ML techniques, attracting 972 teams to participate.
+
+(Website is not visible because the competition has ended.)      `,
       images: ["/aigo/Frame 6.png", "/aigo/Frame 5.png"],
-      url: "/",
+      url: "https://tbrain.trendmicro.com.tw/Competitions/Details/30",
     },
     {
       title: "Discord LLM Agent",
       tags: ["Python", "Openai", "Vector DB"],
-      shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      longDesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
+      shortDesc: "A multi-modal LLM agent that is context-aware and able to use external tools like Python interpreter and web search.",
+      longDesc: `A multi-modal LLM agent that supports multi-turn conversation and able to use external tools like Python interpreter and web text/image search. The agent can recognize user's images and can use vector search to find reaction images. Implemented in Python and uses Discord as interface.`,
       images: ["/dc/dc.jpg"],
-      url: "/",
+      url: "https://github.com/Lifulifu/nekopapa-dc",
     },
     {
       title: "Mahjong Minigame",
       tags: ["Game", "Javascript"],
-      shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      shortDesc: "Mahjong minigame with physics engine in Javascript.",
       longDesc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore, sequi quis optio fugit animi sunt est laborum libero reprehenderit iusto ea modi earum et at. Obcaecati illo, voluptatibus sapiente minus, eaque unde, possimus tempora eveniet fugiat et officiis adipisci ullam mollitia sint suscipit pariatur libero ratione maxime laudantium facilis!",
+        "Mahjong minigame with physics engine in Javascript. The objective is to arrange a valid hand of tiles on the platform.",
       images: ["/mj/Frame 4.png"],
-      url: "/",
+      url: "https://github.com/Lifulifu/MJgame",
     },
     {
       title: "PromptHub",
-      tags: ["Web", "Svelte"],
-      shortDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      longDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      tags: ["Web", "Sveltekit"],
+      shortDesc: "A prompt sharing social media platform.",
+      longDesc: `A social media platform that allows users to share prompts, chat sessions and AI generated images, supporting various AI services as source. Implemented in Sveltekit and sqlite as database.
+
+(Code will be open-sourced soon)`,
       images: ['/prompthub/Frame 7.png', '/prompthub/Frame 8.png'],
-      url: "/",
     },
   ];
