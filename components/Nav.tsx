@@ -16,7 +16,7 @@ const links = [
     path: "#hero",
   },
   {
-    name: "Projects",
+    name: "Side Projects",
     path: "#projects",
   },
 ];

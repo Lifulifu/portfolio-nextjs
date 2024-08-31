@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { projects } from "@/lib/projects";
@@ -15,7 +15,7 @@ function Projects() {
   return (
     <div id="projects" className="container">
       <h1 className="text-5xl font-bold mb-24 text-center after:content-[''] after:block after:w-8 after:h-1 after:mx-auto after:bg-teal-400 after:translate-y-8">
-        Projects
+        Side Projects
       </h1>
 
       <ul className="flex flex-wrap justify-center gap-8">
